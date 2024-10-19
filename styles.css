@@ -1,0 +1,48 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 48%;
+    height: 400px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.preview {
+    width: 48%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    textarea, .preview {
+        width: 100%;
+    }
+}
